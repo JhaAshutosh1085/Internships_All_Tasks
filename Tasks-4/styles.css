@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #333;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.about, .history, .attractions {
+    max-width: 600px;
+    text-align: left;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background: #4CAF50; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about, .history, .attractions {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
